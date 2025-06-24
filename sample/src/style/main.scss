@@ -19,13 +19,16 @@ body {
         margin-left: 1rem;
     }
     .main-nav{
-        display: flex;
+        width: 89%;
+
         ul{
+            margin-top: 1rem;
             margin-right: 2rem;
             display: flex;
             justify-content: end;
             li{
                 list-style: none;
+
                 margin-left: 3rem;
             }
         }
