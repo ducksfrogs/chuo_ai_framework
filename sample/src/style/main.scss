@@ -1,3 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
 .container {
     background-color: rgb(111, 111, 111);
+    width: 100%;
+}
+
+.main-nav ul{
+    margin-right: 2rem;
+    display: flex;
+    justify-content: end;
+    li{
+        list-style: none;
+        margin-left: 3rem;
+    }
 }
