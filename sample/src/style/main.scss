@@ -11,12 +11,24 @@ body {
     width: 100%;
 }
 
-.main-nav ul{
-    margin-right: 2rem;
+.header{
     display: flex;
-    justify-content: end;
-    li{
-        list-style: none;
-        margin-left: 3rem;
+
+    .logo {
+        height: 2.25rem;
+        margin-left: 1rem;
     }
+    .main-nav{
+        display: flex;
+        ul{
+            margin-right: 2rem;
+            display: flex;
+            justify-content: end;
+            li{
+                list-style: none;
+                margin-left: 3rem;
+            }
+        }
+    }
+
 }
