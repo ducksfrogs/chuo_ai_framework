@@ -1,3 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 200px;
+    margin: 0.4rem;
+}
+
+
+body {
+    display: flex;
+}
 // COLOR VARIABLES
 $color-primary: #c69963;
 $color-primary-dark: #B28451;
