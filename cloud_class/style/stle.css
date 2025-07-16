@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-image: 
+        linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/nat-3-large.jpg");
+        background-size: cover;
+        height: 50rem;
+    margin-bottom: 5rem;
+}
+
+.img_test {
+    text-align: center;
+}
+
+.img_test p {
+    margin-bottom: 3rem;
+}
+
+.img_test img {
+    width: 200px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 600px; /* カルーセルの幅 */
+            height: 300px; /* カルーセルの高さ */
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eee;
+            font-size: 24px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://via.placeholder.com/600x300/FF5733/FFFFFF?text=Slide+1" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/600x300/33FF57/FFFFFF?text=Slide+2" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/600x300/3357FF/FFFFFF?text=Slide+3" alt="Slide 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const mySwiper = new Swiper('.swiper', {
+            // オプションを設定
+            loop: true, // 無限ループ
+            pagination: {
+                el: '.swiper-pagination', // ページネーション要素
+                clickable: true, // クリックで移動
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // 次へボタン
+                prevEl: '.swiper-button-prev', // 前へボタン
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar', // スクロールバー要素
+            },
+            autoplay: {
+                delay: 3000, // 3秒ごとに自動再生
+                disableOnInteraction: false, // ユーザー操作後も自動再生を続ける
+            },
+        });
+    </script>
+
+</body>
+</html>
